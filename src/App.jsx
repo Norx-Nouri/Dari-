@@ -4,9 +4,12 @@ import Sing from './Pages/Sing'
 import Login from './Pages/Login'
 import About from './Pages/About'
 import Profile from './Pages/Profile'
+import Header from './Components/Header'
+
 export default function App() {
   return (
     <BrowserRouter>
+      <Header/>
       <Routes>
         <Route path="/Home" element={<Home />} />
         <Route path="/Sing-Up" element={<Sing />} />
